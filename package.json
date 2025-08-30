@@ -9,6 +9,7 @@
   "scripts": {
     "test": "vitest run",
     "test:ui": "vitest",
+    "bench": "vitest run --reporter=verbose src/**/*.bench.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

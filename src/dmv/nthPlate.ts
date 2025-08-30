@@ -19,7 +19,7 @@ const MAX_N = POWERS_OF_10.map((p10, L) => p10 * POWERS_OF_26[6 - L]).reduce((a,
  * @param n - Zero-based index of the plate to generate
  * @returns The plate string (always 6 characters)
  * @throws Error if n is negative, non-integer, or exceeds sequence range
- * @complexity O(1) - no loops over n, direct mathematical calculation
+ * @complexity O(L) where L≤6 - independent of input magnitude n, depends only on block type
  */
 export function nthPlate(n: number): string {
   validateInput(n)

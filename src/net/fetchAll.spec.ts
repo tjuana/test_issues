@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { fetchAll } from './fetchAll.js'
+import { fetchAll } from './fetchAll'
 
 describe('fetchAll', () => {
   let mockFetch: (url: string) => Promise<{ url: string, data: string }>
